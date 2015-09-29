@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabbedActivity$DummySectionFragment" >
+
+    <ListView
+        android:id="@+id/invoices_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <ImageButton
+        android:id="@+id/iv_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/rl_summery"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="onClickAddBtn"
+        android:background="@drawable/plus" />
+
+    <RelativeLayout
+        android:id="@+id/rl_summery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" >
+
+        <TextView
+            android:id="@+id/tv_level_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Total" />
+
+        <TextView
+            android:id="@+id/tv_value_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="$400"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
